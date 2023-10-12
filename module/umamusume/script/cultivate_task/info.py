@@ -135,10 +135,15 @@ def script_info(ctx: UmamusumeContext):
                 ctx.ctrl.click_by_point(TO_RECOVER_TP)
         if title_text == TITLE[27]:
             if image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_1).find_match:
-                ctx.ctrl.click_by_point(USE_TP_DRINK)
-            elif image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_2).find_match:
+#                ctx.ctrl.click_by_point(USE_TP_DRINK)
+                ctx.ctrl.click_by_point(USE_DIAMOND)
+#            elif image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_2).find_match:
+            elif image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_4).find_match:                
+                ctx.ctrl.click_by_point(USE_DIAMOND_CONFIRM_MAX)
+                time.sleep(0.1)
                 ctx.ctrl.click_by_point(USE_TP_DRINK_CONFIRM)
-            elif image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_3).find_match:
+#            elif image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_3).find_match:
+            elif image_match(ctx.ctrl.get_screen(to_gray=True), REF_RECOVER_TP_5).find_match:
                 ctx.ctrl.click_by_point(USE_TP_DRINK_RESULT_CLOSE)
         time.sleep(1)
 
