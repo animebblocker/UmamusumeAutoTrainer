@@ -2,7 +2,7 @@ version: 0.0.1
 bot:
   auto:
     adb:
-      device_name: "127.0.0.1:13798"
+      device_name: "127.0.0.1:14844"
       delay: 0.5
     cpu_alloc: 4
 
